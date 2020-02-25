@@ -1,0 +1,1454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5919412723EBED2B00806B38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5919412623EBED2B00806B38 /* AppDelegate.swift */; };
+		5919412923EBED2B00806B38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5919412823EBED2B00806B38 /* SceneDelegate.swift */; };
+		5919412B23EBED2B00806B38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5919412A23EBED2B00806B38 /* ViewController.swift */; };
+		5919412E23EBED2B00806B38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5919412C23EBED2B00806B38 /* Main.storyboard */; };
+		5919413023EBED2F00806B38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5919412F23EBED2F00806B38 /* Assets.xcassets */; };
+		5919413323EBED2F00806B38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5919413123EBED2F00806B38 /* LaunchScreen.storyboard */; };
+		5919414923EBED2F00806B38 /* CheetaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5919414823EBED2F00806B38 /* CheetaUITests.swift */; };
+		5919415823EBEFF700806B38 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5919415723EBEFF700806B38 /* NetworkManager.swift */; };
+		5919415A23EBF4B100806B38 /* URLUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5919415923EBF4B100806B38 /* URLUtils.swift */; };
+		5919415E23EC132E00806B38 /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5919415D23EC132E00806B38 /* APIConfig.swift */; };
+		5919418123ED36A900806B38 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5919418023ED36A900806B38 /* APIRequest.swift */; };
+		5919418623ED8AB700806B38 /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5919418523ED8AB700806B38 /* MockNetworkManager.swift */; };
+		5919418B23ED8F6F00806B38 /* URLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5919418A23ED8F6F00806B38 /* URLResponse.swift */; };
+		5919418D23EDC2AF00806B38 /* JsonManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5919418C23EDC2AF00806B38 /* JsonManagerTest.swift */; };
+		5919418F23EDC77C00806B38 /* MockUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5919418E23EDC77C00806B38 /* MockUtils.swift */; };
+		5919419023F06E4700806B38 /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5919415D23EC132E00806B38 /* APIConfig.swift */; };
+		596064E22403A5FC0013296A /* DependencyRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596064E12403A5FC0013296A /* DependencyRegistry.swift */; };
+		596064E52403A7AD0013296A /* MusicListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596064E42403A7AD0013296A /* MusicListViewModel.swift */; };
+		596064E82403A85D0013296A /* MusicSearchResultContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596064E72403A85D0013296A /* MusicSearchResultContainer.swift */; };
+		596064EC2403B0E30013296A /* MusicRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596064EB2403B0E30013296A /* MusicRequestTest.swift */; };
+		596064F02403C7A60013296A /* ResponseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5919418723ED8F2200806B38 /* ResponseSerializer.swift */; };
+		596064F12403C7BE0013296A /* MockResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 596064DE24039FC80013296A /* MockResponse.json */; };
+		596064F42403C8180013296A /* MusicRequestSearchResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 596064F22403C7FA0013296A /* MusicRequestSearchResponse.json */; };
+		596064FB2403F3BC0013296A /* NetworkManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596064FA2403F3BC0013296A /* NetworkManagerTest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5919413A23EBED2F00806B38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5919411B23EBED2B00806B38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5919412223EBED2B00806B38;
+			remoteInfo = Cheeta;
+		};
+		5919414523EBED2F00806B38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5919411B23EBED2B00806B38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5919412223EBED2B00806B38;
+			remoteInfo = Cheeta;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5919412323EBED2B00806B38 /* Cheeta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cheeta.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5919412623EBED2B00806B38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5919412823EBED2B00806B38 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5919412A23EBED2B00806B38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5919412D23EBED2B00806B38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5919412F23EBED2F00806B38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5919413223EBED2F00806B38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5919413423EBED2F00806B38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5919413923EBED2F00806B38 /* CheetaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheetaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5919413F23EBED2F00806B38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5919414423EBED2F00806B38 /* CheetaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheetaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5919414823EBED2F00806B38 /* CheetaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheetaUITests.swift; sourceTree = "<group>"; };
+		5919414A23EBED2F00806B38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5919415723EBEFF700806B38 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		5919415923EBF4B100806B38 /* URLUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLUtils.swift; sourceTree = "<group>"; };
+		5919415D23EC132E00806B38 /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
+		5919417C23EC305400806B38 /* Cheeta_Dev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Cheeta_Dev.xcconfig; sourceTree = "<group>"; };
+		5919417D23EC34A500806B38 /* Cheeta_QA.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Cheeta_QA.xcconfig; sourceTree = "<group>"; };
+		5919417E23EC34B900806B38 /* Cheeta_Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Cheeta_Staging.xcconfig; sourceTree = "<group>"; };
+		5919417F23EC34CA00806B38 /* Cheeta_Prod.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Cheeta_Prod.xcconfig; sourceTree = "<group>"; };
+		5919418023ED36A900806B38 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		5919418523ED8AB700806B38 /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
+		5919418723ED8F2200806B38 /* ResponseSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseSerializer.swift; sourceTree = "<group>"; };
+		5919418A23ED8F6F00806B38 /* URLResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLResponse.swift; sourceTree = "<group>"; };
+		5919418C23EDC2AF00806B38 /* JsonManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonManagerTest.swift; sourceTree = "<group>"; };
+		5919418E23EDC77C00806B38 /* MockUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUtils.swift; sourceTree = "<group>"; };
+		596064DE24039FC80013296A /* MockResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockResponse.json; sourceTree = "<group>"; };
+		596064E12403A5FC0013296A /* DependencyRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyRegistry.swift; sourceTree = "<group>"; };
+		596064E42403A7AD0013296A /* MusicListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListViewModel.swift; sourceTree = "<group>"; };
+		596064E72403A85D0013296A /* MusicSearchResultContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicSearchResultContainer.swift; sourceTree = "<group>"; };
+		596064EB2403B0E30013296A /* MusicRequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicRequestTest.swift; sourceTree = "<group>"; };
+		596064F22403C7FA0013296A /* MusicRequestSearchResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MusicRequestSearchResponse.json; sourceTree = "<group>"; };
+		596064FA2403F3BC0013296A /* NetworkManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5919412023EBED2B00806B38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5919413623EBED2F00806B38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5919414123EBED2F00806B38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5919411A23EBED2B00806B38 = {
+			isa = PBXGroup;
+			children = (
+				5919412523EBED2B00806B38 /* Cheeta */,
+				5919413C23EBED2F00806B38 /* CheetaTests */,
+				5919414723EBED2F00806B38 /* CheetaUITests */,
+				5919412423EBED2B00806B38 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5919412423EBED2B00806B38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5919412323EBED2B00806B38 /* Cheeta.app */,
+				5919413923EBED2F00806B38 /* CheetaTests.xctest */,
+				5919414423EBED2F00806B38 /* CheetaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5919412523EBED2B00806B38 /* Cheeta */ = {
+			isa = PBXGroup;
+			children = (
+				596064E62403A84F0013296A /* Models */,
+				596064E32403A7900013296A /* ViewModel */,
+				5919417B23EC2FFB00806B38 /* Configs */,
+				5919415623EBEE3200806B38 /* Network */,
+				5919412623EBED2B00806B38 /* AppDelegate.swift */,
+				5919412823EBED2B00806B38 /* SceneDelegate.swift */,
+				5919412A23EBED2B00806B38 /* ViewController.swift */,
+				5919412C23EBED2B00806B38 /* Main.storyboard */,
+				5919412F23EBED2F00806B38 /* Assets.xcassets */,
+				5919413123EBED2F00806B38 /* LaunchScreen.storyboard */,
+				5919413423EBED2F00806B38 /* Info.plist */,
+			);
+			path = Cheeta;
+			sourceTree = "<group>";
+		};
+		5919413C23EBED2F00806B38 /* CheetaTests */ = {
+			isa = PBXGroup;
+			children = (
+				5919413F23EBED2F00806B38 /* Info.plist */,
+				596064EB2403B0E30013296A /* MusicRequestTest.swift */,
+				5919418C23EDC2AF00806B38 /* JsonManagerTest.swift */,
+				596064ED2403B0FF0013296A /* JSONResponse */,
+				596064FA2403F3BC0013296A /* NetworkManagerTest.swift */,
+			);
+			path = CheetaTests;
+			sourceTree = "<group>";
+		};
+		5919414723EBED2F00806B38 /* CheetaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5919414823EBED2F00806B38 /* CheetaUITests.swift */,
+				5919414A23EBED2F00806B38 /* Info.plist */,
+			);
+			path = CheetaUITests;
+			sourceTree = "<group>";
+		};
+		5919415623EBEE3200806B38 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5919418923ED8F5C00806B38 /* Extensions */,
+				5919418723ED8F2200806B38 /* ResponseSerializer.swift */,
+				5919418423ED8AA000806B38 /* Mock */,
+				5919415723EBEFF700806B38 /* NetworkManager.swift */,
+				5919415923EBF4B100806B38 /* URLUtils.swift */,
+				5919418023ED36A900806B38 /* APIRequest.swift */,
+				596064E12403A5FC0013296A /* DependencyRegistry.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		5919417B23EC2FFB00806B38 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				5919415D23EC132E00806B38 /* APIConfig.swift */,
+				5919417C23EC305400806B38 /* Cheeta_Dev.xcconfig */,
+				5919417D23EC34A500806B38 /* Cheeta_QA.xcconfig */,
+				5919417E23EC34B900806B38 /* Cheeta_Staging.xcconfig */,
+				5919417F23EC34CA00806B38 /* Cheeta_Prod.xcconfig */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
+		5919418423ED8AA000806B38 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				5919418523ED8AB700806B38 /* MockNetworkManager.swift */,
+				5919418E23EDC77C00806B38 /* MockUtils.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		5919418923ED8F5C00806B38 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5919418A23ED8F6F00806B38 /* URLResponse.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		596064E32403A7900013296A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				596064E42403A7AD0013296A /* MusicListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		596064E62403A84F0013296A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				596064E72403A85D0013296A /* MusicSearchResultContainer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		596064ED2403B0FF0013296A /* JSONResponse */ = {
+			isa = PBXGroup;
+			children = (
+				596064DE24039FC80013296A /* MockResponse.json */,
+				596064F22403C7FA0013296A /* MusicRequestSearchResponse.json */,
+			);
+			path = JSONResponse;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5919412223EBED2B00806B38 /* Cheeta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5919414D23EBED2F00806B38 /* Build configuration list for PBXNativeTarget "Cheeta" */;
+			buildPhases = (
+				5919411F23EBED2B00806B38 /* Sources */,
+				5919412023EBED2B00806B38 /* Frameworks */,
+				5919412123EBED2B00806B38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cheeta;
+			productName = Cheeta;
+			productReference = 5919412323EBED2B00806B38 /* Cheeta.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5919413823EBED2F00806B38 /* CheetaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5919415023EBED2F00806B38 /* Build configuration list for PBXNativeTarget "CheetaTests" */;
+			buildPhases = (
+				5919413523EBED2F00806B38 /* Sources */,
+				5919413623EBED2F00806B38 /* Frameworks */,
+				5919413723EBED2F00806B38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5919413B23EBED2F00806B38 /* PBXTargetDependency */,
+			);
+			name = CheetaTests;
+			productName = CheetaTests;
+			productReference = 5919413923EBED2F00806B38 /* CheetaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5919414323EBED2F00806B38 /* CheetaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5919415323EBED2F00806B38 /* Build configuration list for PBXNativeTarget "CheetaUITests" */;
+			buildPhases = (
+				5919414023EBED2F00806B38 /* Sources */,
+				5919414123EBED2F00806B38 /* Frameworks */,
+				5919414223EBED2F00806B38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5919414623EBED2F00806B38 /* PBXTargetDependency */,
+			);
+			name = CheetaUITests;
+			productName = CheetaUITests;
+			productReference = 5919414423EBED2F00806B38 /* CheetaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5919411B23EBED2B00806B38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = TW;
+				TargetAttributes = {
+					5919412223EBED2B00806B38 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					5919413823EBED2F00806B38 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 5919412223EBED2B00806B38;
+					};
+					5919414323EBED2F00806B38 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 5919412223EBED2B00806B38;
+					};
+				};
+			};
+			buildConfigurationList = 5919411E23EBED2B00806B38 /* Build configuration list for PBXProject "Cheeta" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5919411A23EBED2B00806B38;
+			productRefGroup = 5919412423EBED2B00806B38 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5919412223EBED2B00806B38 /* Cheeta */,
+				5919413823EBED2F00806B38 /* CheetaTests */,
+				5919414323EBED2F00806B38 /* CheetaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5919412123EBED2B00806B38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5919413323EBED2F00806B38 /* LaunchScreen.storyboard in Resources */,
+				5919413023EBED2F00806B38 /* Assets.xcassets in Resources */,
+				596064F12403C7BE0013296A /* MockResponse.json in Resources */,
+				596064F42403C8180013296A /* MusicRequestSearchResponse.json in Resources */,
+				5919412E23EBED2B00806B38 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5919413723EBED2F00806B38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5919414223EBED2F00806B38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5919411F23EBED2B00806B38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5919415A23EBF4B100806B38 /* URLUtils.swift in Sources */,
+				5919418123ED36A900806B38 /* APIRequest.swift in Sources */,
+				5919415823EBEFF700806B38 /* NetworkManager.swift in Sources */,
+				596064E52403A7AD0013296A /* MusicListViewModel.swift in Sources */,
+				5919418623ED8AB700806B38 /* MockNetworkManager.swift in Sources */,
+				5919415E23EC132E00806B38 /* APIConfig.swift in Sources */,
+				596064F02403C7A60013296A /* ResponseSerializer.swift in Sources */,
+				5919412B23EBED2B00806B38 /* ViewController.swift in Sources */,
+				5919412723EBED2B00806B38 /* AppDelegate.swift in Sources */,
+				5919418B23ED8F6F00806B38 /* URLResponse.swift in Sources */,
+				5919418F23EDC77C00806B38 /* MockUtils.swift in Sources */,
+				5919412923EBED2B00806B38 /* SceneDelegate.swift in Sources */,
+				596064E82403A85D0013296A /* MusicSearchResultContainer.swift in Sources */,
+				596064E22403A5FC0013296A /* DependencyRegistry.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5919413523EBED2F00806B38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5919418D23EDC2AF00806B38 /* JsonManagerTest.swift in Sources */,
+				5919419023F06E4700806B38 /* APIConfig.swift in Sources */,
+				596064FB2403F3BC0013296A /* NetworkManagerTest.swift in Sources */,
+				596064EC2403B0E30013296A /* MusicRequestTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5919414023EBED2F00806B38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5919414923EBED2F00806B38 /* CheetaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5919413B23EBED2F00806B38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5919412223EBED2B00806B38 /* Cheeta */;
+			targetProxy = 5919413A23EBED2F00806B38 /* PBXContainerItemProxy */;
+		};
+		5919414623EBED2F00806B38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5919412223EBED2B00806B38 /* Cheeta */;
+			targetProxy = 5919414523EBED2F00806B38 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5919412C23EBED2B00806B38 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5919412D23EBED2B00806B38 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5919413123EBED2F00806B38 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5919413223EBED2F00806B38 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5919414B23EBED2F00806B38 /* Debug Dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5919417C23EC305400806B38 /* Cheeta_Dev.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug Dev";
+		};
+		5919414C23EBED2F00806B38 /* Release Dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5919417C23EC305400806B38 /* Cheeta_Dev.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release Dev";
+		};
+		5919414E23EBED2F00806B38 /* Debug Dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5919417C23EC305400806B38 /* Cheeta_Dev.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Cheeta/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tw.cheeta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug Dev";
+		};
+		5919414F23EBED2F00806B38 /* Release Dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5919417C23EC305400806B38 /* Cheeta_Dev.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Cheeta/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tw.cheeta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release Dev";
+		};
+		5919415123EBED2F00806B38 /* Debug Dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5919417C23EC305400806B38 /* Cheeta_Dev.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CheetaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tw.CheetaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cheeta.app/Cheeta";
+			};
+			name = "Debug Dev";
+		};
+		5919415223EBED2F00806B38 /* Release Dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5919417C23EC305400806B38 /* Cheeta_Dev.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CheetaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tw.CheetaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cheeta.app/Cheeta";
+			};
+			name = "Release Dev";
+		};
+		5919415423EBED2F00806B38 /* Debug Dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5919417C23EC305400806B38 /* Cheeta_Dev.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CheetaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tw.CheetaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cheeta;
+			};
+			name = "Debug Dev";
+		};
+		5919415523EBED2F00806B38 /* Release Dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5919417C23EC305400806B38 /* Cheeta_Dev.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CheetaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tw.CheetaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cheeta;
+			};
+			name = "Release Dev";
+		};
+		5919415F23EC2B3F00806B38 /* Debug QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5919417D23EC34A500806B38 /* Cheeta_QA.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug QA";
+		};
+		5919416023EC2B3F00806B38 /* Debug QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5919417D23EC34A500806B38 /* Cheeta_QA.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Cheeta/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tw.cheeta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug QA";
+		};
+		5919416123EC2B3F00806B38 /* Debug QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5919417D23EC34A500806B38 /* Cheeta_QA.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CheetaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tw.CheetaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cheeta.app/Cheeta";
+			};
+			name = "Debug QA";
+		};
+		5919416223EC2B3F00806B38 /* Debug QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5919417D23EC34A500806B38 /* Cheeta_QA.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CheetaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tw.CheetaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cheeta;
+			};
+			name = "Debug QA";
+		};
+		5919416323EC2B4300806B38 /* Release QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5919417D23EC34A500806B38 /* Cheeta_QA.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release QA";
+		};
+		5919416423EC2B4300806B38 /* Release QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5919417D23EC34A500806B38 /* Cheeta_QA.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Cheeta/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tw.cheeta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release QA";
+		};
+		5919416523EC2B4300806B38 /* Release QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5919417D23EC34A500806B38 /* Cheeta_QA.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CheetaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tw.CheetaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cheeta.app/Cheeta";
+			};
+			name = "Release QA";
+		};
+		5919416623EC2B4300806B38 /* Release QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5919417D23EC34A500806B38 /* Cheeta_QA.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CheetaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tw.CheetaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cheeta;
+			};
+			name = "Release QA";
+		};
+		5919416723EC2B8D00806B38 /* Debug Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5919417E23EC34B900806B38 /* Cheeta_Staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug Staging";
+		};
+		5919416823EC2B8D00806B38 /* Debug Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5919417E23EC34B900806B38 /* Cheeta_Staging.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Cheeta/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tw.cheeta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug Staging";
+		};
+		5919416923EC2B8D00806B38 /* Debug Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5919417E23EC34B900806B38 /* Cheeta_Staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CheetaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tw.CheetaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cheeta.app/Cheeta";
+			};
+			name = "Debug Staging";
+		};
+		5919416A23EC2B8D00806B38 /* Debug Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5919417E23EC34B900806B38 /* Cheeta_Staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CheetaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tw.CheetaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cheeta;
+			};
+			name = "Debug Staging";
+		};
+		5919416B23EC2BA200806B38 /* Debug Prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5919417F23EC34CA00806B38 /* Cheeta_Prod.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug Prod";
+		};
+		5919416C23EC2BA200806B38 /* Debug Prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5919417F23EC34CA00806B38 /* Cheeta_Prod.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Cheeta/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tw.cheeta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug Prod";
+		};
+		5919416D23EC2BA200806B38 /* Debug Prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5919417F23EC34CA00806B38 /* Cheeta_Prod.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CheetaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tw.CheetaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cheeta.app/Cheeta";
+			};
+			name = "Debug Prod";
+		};
+		5919416E23EC2BA200806B38 /* Debug Prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5919417F23EC34CA00806B38 /* Cheeta_Prod.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CheetaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tw.CheetaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cheeta;
+			};
+			name = "Debug Prod";
+		};
+		5919417323EC2BC600806B38 /* Release Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5919417E23EC34B900806B38 /* Cheeta_Staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release Staging";
+		};
+		5919417423EC2BC600806B38 /* Release Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5919417E23EC34B900806B38 /* Cheeta_Staging.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Cheeta/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tw.cheeta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release Staging";
+		};
+		5919417523EC2BC600806B38 /* Release Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5919417E23EC34B900806B38 /* Cheeta_Staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CheetaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tw.CheetaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cheeta.app/Cheeta";
+			};
+			name = "Release Staging";
+		};
+		5919417623EC2BC600806B38 /* Release Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5919417E23EC34B900806B38 /* Cheeta_Staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CheetaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tw.CheetaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cheeta;
+			};
+			name = "Release Staging";
+		};
+		5919417723EC2BD200806B38 /* Release Prod */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release Prod";
+		};
+		5919417823EC2BD200806B38 /* Release Prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5919417F23EC34CA00806B38 /* Cheeta_Prod.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Cheeta/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tw.cheeta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release Prod";
+		};
+		5919417923EC2BD200806B38 /* Release Prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5919417F23EC34CA00806B38 /* Cheeta_Prod.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CheetaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tw.CheetaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cheeta.app/Cheeta";
+			};
+			name = "Release Prod";
+		};
+		5919417A23EC2BD200806B38 /* Release Prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5919417F23EC34CA00806B38 /* Cheeta_Prod.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CheetaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tw.CheetaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cheeta;
+			};
+			name = "Release Prod";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5919411E23EBED2B00806B38 /* Build configuration list for PBXProject "Cheeta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5919414B23EBED2F00806B38 /* Debug Dev */,
+				5919416B23EC2BA200806B38 /* Debug Prod */,
+				5919416723EC2B8D00806B38 /* Debug Staging */,
+				5919415F23EC2B3F00806B38 /* Debug QA */,
+				5919414C23EBED2F00806B38 /* Release Dev */,
+				5919417323EC2BC600806B38 /* Release Staging */,
+				5919417723EC2BD200806B38 /* Release Prod */,
+				5919416323EC2B4300806B38 /* Release QA */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release Dev";
+		};
+		5919414D23EBED2F00806B38 /* Build configuration list for PBXNativeTarget "Cheeta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5919414E23EBED2F00806B38 /* Debug Dev */,
+				5919416C23EC2BA200806B38 /* Debug Prod */,
+				5919416823EC2B8D00806B38 /* Debug Staging */,
+				5919416023EC2B3F00806B38 /* Debug QA */,
+				5919414F23EBED2F00806B38 /* Release Dev */,
+				5919417423EC2BC600806B38 /* Release Staging */,
+				5919417823EC2BD200806B38 /* Release Prod */,
+				5919416423EC2B4300806B38 /* Release QA */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release Dev";
+		};
+		5919415023EBED2F00806B38 /* Build configuration list for PBXNativeTarget "CheetaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5919415123EBED2F00806B38 /* Debug Dev */,
+				5919416D23EC2BA200806B38 /* Debug Prod */,
+				5919416923EC2B8D00806B38 /* Debug Staging */,
+				5919416123EC2B3F00806B38 /* Debug QA */,
+				5919415223EBED2F00806B38 /* Release Dev */,
+				5919417523EC2BC600806B38 /* Release Staging */,
+				5919417923EC2BD200806B38 /* Release Prod */,
+				5919416523EC2B4300806B38 /* Release QA */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release Dev";
+		};
+		5919415323EBED2F00806B38 /* Build configuration list for PBXNativeTarget "CheetaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5919415423EBED2F00806B38 /* Debug Dev */,
+				5919416E23EC2BA200806B38 /* Debug Prod */,
+				5919416A23EC2B8D00806B38 /* Debug Staging */,
+				5919416223EC2B3F00806B38 /* Debug QA */,
+				5919415523EBED2F00806B38 /* Release Dev */,
+				5919417623EC2BC600806B38 /* Release Staging */,
+				5919417A23EC2BD200806B38 /* Release Prod */,
+				5919416623EC2B4300806B38 /* Release QA */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release Dev";
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5919411B23EBED2B00806B38 /* Project object */;
+}

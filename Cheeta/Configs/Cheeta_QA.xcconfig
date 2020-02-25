@@ -1,0 +1,23 @@
+//
+//  Cheeta_QA.xcconfig
+//  Cheeta
+//
+//  Created by Mahabaleshwar on 06/02/20.
+//  Copyright © 2020 TW. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+// QA.xcconfig
+// Server URL
+ROOT_URL = https:/$()/itunes.apple.com/
+//Test Target
+MOCK_URL = https:/$()/mock
+
+// Keys
+API_KEY = 783u9djd8a_hkzos7jd803001nd
+
+// App Settings
+APP_NAME = Cheeta (QA)
+APP_BUNDLE_ID = com.tw.cheeta.qa
