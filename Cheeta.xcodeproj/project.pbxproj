@@ -31,6 +31,7 @@
 		596064F12403C7BE0013296A /* MockResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 596064DE24039FC80013296A /* MockResponse.json */; };
 		596064F42403C8180013296A /* MusicRequestSearchResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 596064F22403C7FA0013296A /* MusicRequestSearchResponse.json */; };
 		596064FB2403F3BC0013296A /* NetworkManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596064FA2403F3BC0013296A /* NetworkManagerTest.swift */; };
+		596065B12408D3710013296A /* MusicListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596065B02408D3710013296A /* MusicListViewModelTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		596064EB2403B0E30013296A /* MusicRequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicRequestTest.swift; sourceTree = "<group>"; };
 		596064F22403C7FA0013296A /* MusicRequestSearchResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MusicRequestSearchResponse.json; sourceTree = "<group>"; };
 		596064FA2403F3BC0013296A /* NetworkManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTest.swift; sourceTree = "<group>"; };
+		596065B02408D3710013296A /* MusicListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListViewModelTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 				5919418C23EDC2AF00806B38 /* JsonManagerTest.swift */,
 				596064ED2403B0FF0013296A /* JSONResponse */,
 				596064FA2403F3BC0013296A /* NetworkManagerTest.swift */,
+				596065B02408D3710013296A /* MusicListViewModelTest.swift */,
 			);
 			path = CheetaTests;
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 				5919418D23EDC2AF00806B38 /* JsonManagerTest.swift in Sources */,
 				5919419023F06E4700806B38 /* APIConfig.swift in Sources */,
 				596064FB2403F3BC0013296A /* NetworkManagerTest.swift in Sources */,
+				596065B12408D3710013296A /* MusicListViewModelTest.swift in Sources */,
 				596064EC2403B0E30013296A /* MusicRequestTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
