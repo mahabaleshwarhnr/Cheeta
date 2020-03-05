@@ -11,20 +11,23 @@ import Foundation
 
 class DependencyRegistry {
     
-    private static var registry: NetworkManagerInitializable.Type = APIManager.self
+    private static var registry: NetworkManagerInitializable.Type!
     
     static func getNetWorkManager() -> NetworkManagerInitializable {
-        //        return registry.shared
-        let target = APIConfig.config.currentTarget
-        switch target {
-        case .run:
-            return registry.shared
-        case .test:
-            return MockNetworkManager.shared
+        if let value = registry {
+            return value.shared
+        } else {
+            let target = APIConfig.config.currentTarget
+            switch target {
+            case .run:
+                return APIManager.shared
+            case .test:
+                return MockNetworkManager.shared
+            }
         }
     }
     
-    static private func setRegistry(_ registry: NetworkManagerInitializable.Type) {
+    static func setRegistry(_ registry: NetworkManagerInitializable.Type) {
         self.registry = registry
     }
 }

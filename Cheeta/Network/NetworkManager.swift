@@ -34,7 +34,7 @@ extension NetworkManagerInitializable {
     }
     
     @discardableResult
-    func sendRequest<Response, Request>(request: Request, responseType: Response.Type, completionHandler: @escaping (Result<Response, Error>) -> Void) -> URLSessionTaskProtocol where Response : Decodable, Request : APIRequestInitializable, Request : URLBuilder {
+    func sendRequest<Response, Request>(request: Request, responseType: Response.Type, completionHandler: @escaping (Result<Response, Error>) -> Void) -> URLSessionTaskProtocol where Response : Decodable, Request : RequestConfigurable {
         
         let urlRequest = self.getURLRequest(request: request)
         

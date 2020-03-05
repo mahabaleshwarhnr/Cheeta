@@ -28,6 +28,10 @@ typealias RequestConfigurable = APIRequestInitializable & URLBuilder
 
 class APIRequest: RequestConfigurable {
     
+    var baseURL: URL {
+        return APIConfig.config.baseURL
+    }
+    
     var timeoutInterval: TimeInterval = 60.0
     var cachePolicy: URLRequest.CachePolicy = .useProtocolCachePolicy
     var endPoint: String

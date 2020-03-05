@@ -35,11 +35,7 @@ protocol URLBuilder {
 }
 
 extension URLBuilder {
-    
-    var baseURL: URL {
-        return APIConfig.config.baseURL
-    }
-    
+        
     func getURL() -> URL {
         let url = URL(string: self.endPoint, relativeTo: baseURL)!
         var components = URLComponents(url: url, resolvingAgainstBaseURL: true)!
