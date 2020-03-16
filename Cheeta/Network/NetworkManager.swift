@@ -12,7 +12,7 @@ protocol NetworkManagerInitializable {
     static var shared: NetworkManagerInitializable { get }
     var session: URLSessionProtocol { get }
     init(session: URLSessionProtocol)
-    @discardableResult func sendRequest<Response: Decodable, Request: RequestConfigurable>(request: Request,responseType: Response.Type, completionHandler: @escaping CompletionHandler<Response, Error>) -> URLSessionTaskProtocol
+    @discardableResult func sendRequest<Response: Decodable, Request: RequestConfigurable>(request: Request,responseType: Response.Type, completionHandler: @escaping CompletionHandler<Response, Error>) -> URLSessionDataTaskProtocol
     func getURLRequest(request: RequestConfigurable) -> URLRequest
 }
 
@@ -34,7 +34,7 @@ extension NetworkManagerInitializable {
     }
     
     @discardableResult
-    func sendRequest<Response, Request>(request: Request, responseType: Response.Type, completionHandler: @escaping (Result<Response, Error>) -> Void) -> URLSessionTaskProtocol where Response : Decodable, Request : RequestConfigurable {
+    func sendRequest<Response, Request>(request: Request, responseType: Response.Type, completionHandler: @escaping (Result<Response, Error>) -> Void) -> URLSessionDataTaskProtocol where Response : Decodable, Request : RequestConfigurable {
         
         let urlRequest = self.getURLRequest(request: request)
         
@@ -67,28 +67,5 @@ class APIManager: NSObject, NetworkManagerInitializable {
 }
 
 
-protocol URLSessionProtocol: class {
-    
- 
-    func dataTask(request: URLRequest, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionTaskProtocol
-}
 
-protocol URLSessionTaskProtocol: class {
-    func resume()
-    func cancel()
-    func suspend()
-}
-
-extension URLSessionDataTask: URLSessionTaskProtocol {}
-
-extension URLSession: URLSessionProtocol {
-    
-    func dataTask(request: URLRequest, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionTaskProtocol {
-        return self.dataTask(with: request, completionHandler: completionHandler)
-    }
-    
-    var session: URLSessionProtocol {
-        return self
-    }
-}
 

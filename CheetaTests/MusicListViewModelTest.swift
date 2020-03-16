@@ -22,6 +22,7 @@ class MusicListViewModelTest: XCTestCase {
         viewModel.networkManager = getMockedNetworkManager(data: data, error: nil)
         viewModel.fetchMusicList(searchTerm: "hello") { (response) in
             XCTAssertNotNil(response, "Music List response returns nil")
+            
         }
     }
     
@@ -36,7 +37,7 @@ class MusicListViewModelTest: XCTestCase {
     private func getMockedNetworkManager(data: Data?, error: Error?) -> NetworkManagerInitializable {
         let session = MockedURLSession()
         session.data = data
-        let networkManager = MockNetworkManager(session: session)
+        let networkManager = APIManager(session: session)
         return networkManager
     }
 }

@@ -26,6 +26,8 @@ protocol APIRequestInitializable: URLRequestInitializable {
 
 typealias RequestConfigurable = APIRequestInitializable & URLBuilder
 
+// TODO:- make it protocol
+
 class APIRequest: RequestConfigurable {
     
     var baseURL: URL {

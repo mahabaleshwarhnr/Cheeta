@@ -8,23 +8,17 @@
 
 import UIKit
 
-class MockNetworkManager: NetworkManagerInitializable {
-    
-    static var shared: NetworkManagerInitializable {
-        return MockNetworkManager(session: MockedURLSession())
-    }
-    var session: URLSessionProtocol
-    
-    required init(session: URLSessionProtocol) {
-        self.session = session
-    }
+protocol URLSessionProtocol: class {
+    func dataTask(request: URLRequest, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTaskProtocol
 }
 
+protocol URLSessionDataTaskProtocol: class {
+    func resume()
+}
 
 // We create a partial mock by subclassing the original class
-class URLSessionDataTaskMock: URLSessionTaskProtocol {
-    func cancel() {}
-    func suspend() {}
+class URLSessionDataTaskMock: URLSessionDataTaskProtocol {
+   
     func resume() {
         completion()
     }
@@ -34,6 +28,13 @@ class URLSessionDataTaskMock: URLSessionTaskProtocol {
     }
 }
 
+extension URLSessionDataTask: URLSessionDataTaskProtocol {}
+
+extension URLSession: URLSessionProtocol {
+    func dataTask(request: URLRequest, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTaskProtocol {
+        return self.dataTask(with: request, completionHandler: completionHandler)
+    }
+}
 
 class MockedURLSession: URLSessionProtocol {
     
@@ -41,12 +42,49 @@ class MockedURLSession: URLSessionProtocol {
     var httpResponse: HTTPURLResponse?
     var error: Error?
     
-    static var shared = MockedURLSession()
+    static var shared: MockedURLSession {
+        return MockedURLSession()
+    }
     
-    func dataTask(request: URLRequest, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionTaskProtocol {
-        let mockDataTask = URLSessionDataTaskMock {
-            completionHandler(self.data, self.httpResponse, self.error)
+    public init() {
+        
+    }
+    
+    func dataTask(request: URLRequest, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTaskProtocol {
+        let mockedDataTask = URLSessionDataTaskMock { [weak self] in
+            completionHandler(self?.data, self?.httpResponse, self?.error)
         }
-        return mockDataTask
+        return mockedDataTask
     }
 }
+
+//class MockedProtocol: URLProtocol {
+//
+//    static var mockedResponseTuple: (data: Data?, httpResponse: HTTPURLResponse?, error: Error?)
+//
+//    override func startLoading() {
+//        let tuple = MockedProtocol.mockedResponseTuple
+//        if MockedProtocol.mockedResponseTuple.httpResponse?.isSuccess == true {
+//            self.client?.urlProtocol(self, didReceive: tuple.httpResponse!, cacheStoragePolicy: .notAllowed)
+//            self.client?.urlProtocol(self, didLoad: tuple.data!)
+//            self.client?.urlProtocolDidFinishLoading(self)
+//        } else {
+//            self.client?.urlProtocol(self, didFailWithError: tuple.error!)
+//        }
+//    }
+//
+//    override func stopLoading() {
+//
+//    }
+//
+//    override class func canonicalRequest(for request: URLRequest) -> URLRequest {
+//        return request
+//    }
+//
+//    override class func canInit(with request: URLRequest) -> Bool {
+//        guard let _ = request.url else {
+//            return false
+//        }
+//        return true
+//    }
+//}

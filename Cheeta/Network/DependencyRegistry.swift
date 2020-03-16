@@ -22,7 +22,7 @@ class DependencyRegistry {
             case .run:
                 return APIManager.shared
             case .test:
-                return MockNetworkManager.shared
+                return APIManager(session: MockedURLSession.shared)
             }
         }
     }

@@ -11,14 +11,14 @@ import XCTest
 
 class NetworkManagerTest: XCTestCase {
     
-    private var networkManager: NetworkManagerInitializable! = MockNetworkManager.shared
+    private var networkManager: NetworkManagerInitializable! = APIManager(session: MockedURLSession.shared)
     
     func testNetworkManagerResponseIsSuccessAndHasValidData() {
         
-        let session = MockedURLSession()
+        let session = MockedURLSession.shared
         let jsonData = try! XCTUnwrap(JSONManager.getJSONData(fileName: "MockResponse"))
         session.data = jsonData
-        networkManager = MockNetworkManager(session: session)
+        networkManager = APIManager(session: session)
         let musicSearchRequest = APIRequest(endPoint: MusicEnpoints.search, method: .get, queryParams: nil)
         networkManager.sendRequest(request: musicSearchRequest, responseType: MockReponse.self) { (response) in
             switch response {
@@ -33,10 +33,10 @@ class NetworkManagerTest: XCTestCase {
     
     func testNetworkManagerResponseIsFailedAndReturnsError() {
         
-        let session = MockedURLSession()
+        let session = MockedURLSession.shared
         session.data = nil
         session.httpResponse = HTTPURLResponse(url: APIConfig.config.baseURL, statusCode: 400, httpVersion: nil, headerFields: nil)
-        networkManager = MockNetworkManager(session: session)
+        networkManager = APIManager(session: session)
         let musicSearchRequest = APIRequest(endPoint: MusicEnpoints.search, method: .get, queryParams: nil)
         networkManager.sendRequest(request: musicSearchRequest, responseType: MockReponse.self) { (response) in
             switch response {
@@ -51,10 +51,10 @@ class NetworkManagerTest: XCTestCase {
     
     func testNetworkManagerShouldReturnErrorWhenResponseHasErrorData() {
         
-        let session = MockedURLSession()
+        let session = MockedURLSession.shared
         session.data = Data([0,1,0, 1])
         session.httpResponse = HTTPURLResponse(url: APIConfig.config.baseURL, statusCode: 400, httpVersion: nil, headerFields: nil)
-        networkManager = MockNetworkManager(session: session)
+        networkManager = APIManager(session: session)
         let musicSearchRequest = APIRequest(endPoint: MusicEnpoints.search, method: .get, queryParams: nil)
         networkManager.sendRequest(request: musicSearchRequest, responseType: MockReponse.self) { (response) in
             switch response {
