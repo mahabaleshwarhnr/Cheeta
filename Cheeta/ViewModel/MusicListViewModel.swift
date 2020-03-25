@@ -10,7 +10,7 @@ import UIKit
 
 class MusicListViewModel: NSObject {
     
-    var networkManager  = DependencyRegistry.getNetWorkManager()
+    var networkManager  = APIManager(session: .init(configuration: .default, delegate: nil, delegateQueue: .main))
 }
 
 extension MusicListViewModel {

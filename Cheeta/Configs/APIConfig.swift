@@ -31,20 +31,8 @@ final class APIConfig: EnvironmentConfigurable {
         return rootURL
     }()
     
-    lazy private var mockURL: String = {
-           let info = Bundle.main.infoDictionary
-           guard let mockURL = info?["MOCK_URL"] as? String else { fatalError("Please set ROOT_URL in info.plist") }
-           return mockURL
-       }()
-    
     var baseURL: URL {
         return URL(string: rootURL)!
-//        switch self.currentTarget {
-//        case .run:
-//            return URL(string: rootURL)!
-//        case .test:
-//            return URL(string: mockURL)!
-//        }
     }
     
     private init() {}

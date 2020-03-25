@@ -37,7 +37,12 @@ protocol URLBuilder {
 extension URLBuilder {
         
     func getURL() -> URL {
-        let url = URL(string: self.endPoint, relativeTo: baseURL)!
+        let url: URL!
+        if self.endPoint.relativePath.trimmingCharacters(in: .whitespacesAndNewlines).count > 0 {
+            url = URL(string: self.endPoint, relativeTo: baseURL)!
+        } else {
+            url = baseURL
+        }
         var components = URLComponents(url: url, resolvingAgainstBaseURL: true)!
         components.queryItems = self.queryParams?.map(URLQueryItem.init)
         return components.url!

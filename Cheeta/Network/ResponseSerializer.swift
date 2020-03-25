@@ -49,7 +49,7 @@ class JSONManager: DataResponseDeSerializer, DataResponseSerializer  {
         }
         
         if let httpResponse = response as? HTTPURLResponse, !httpResponse.isSuccess {
-            throw httpResponse.httpStatusCode ?? ServiceError.unknownError
+            throw httpResponse.httpStatusCode!
         }
         guard let resonseData = data else {
             throw ServiceError.noData
@@ -61,8 +61,8 @@ class JSONManager: DataResponseDeSerializer, DataResponseSerializer  {
         return try type.toJSONData()
     }
     
-    static func getJSONData(fileName: String) -> Data?  {
-        let resourcePath = Bundle(for: JSONManager.self).path(forResource: fileName, ofType: "json") ?? ""
+    static func getJSONData(fileName: String) -> Data!  {
+        let resourcePath = Bundle(for: JSONManager.self).path(forResource: fileName, ofType: "json")!
         return NSData(contentsOfFile: resourcePath) as Data?
     }
 }
@@ -80,4 +80,10 @@ enum ParseError: Error {
 enum ServiceError: Error {
     case unknownError
     case noData
+    case invalidURLRequest
+    case invalidURL
+}
+
+enum ValidationError: Error {
+    case queryParamsMissing
 }

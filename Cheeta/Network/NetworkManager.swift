@@ -10,9 +10,9 @@ import UIKit
 
 protocol NetworkManagerInitializable {
     static var shared: NetworkManagerInitializable { get }
-    var session: URLSessionProtocol { get }
-    init(session: URLSessionProtocol)
-    @discardableResult func sendRequest<Response: Decodable, Request: RequestConfigurable>(request: Request,responseType: Response.Type, completionHandler: @escaping CompletionHandler<Response, Error>) -> URLSessionDataTaskProtocol
+    var session: URLSession { get }
+    init(session: URLSession)
+    @discardableResult func sendRequest<Response: Decodable, Request: RequestConfigurable>(request: Request,responseType: Response.Type, completionHandler: @escaping CompletionHandler<Response, Error>) -> URLSessionTask
     func getURLRequest(request: RequestConfigurable) -> URLRequest
 }
 
@@ -34,11 +34,11 @@ extension NetworkManagerInitializable {
     }
     
     @discardableResult
-    func sendRequest<Response, Request>(request: Request, responseType: Response.Type, completionHandler: @escaping (Result<Response, Error>) -> Void) -> URLSessionDataTaskProtocol where Response : Decodable, Request : RequestConfigurable {
+    func sendRequest<Response, Request>(request: Request, responseType: Response.Type, completionHandler: @escaping (Result<Response, Error>) -> Void) -> URLSessionTask where Response : Decodable, Request : RequestConfigurable {
         
         let urlRequest = self.getURLRequest(request: request)
         
-        let dataTask = self.session.dataTask(request: urlRequest) {  (data, urlResponse, error) in
+        let dataTask = self.session.dataTask(with: urlRequest) {  (data, urlResponse, error) in
             let jsonManager = JSONManager(data: data, response: urlResponse, error: error)
             do {
                 let responseModel = try jsonManager.parse(responseType)
@@ -59,9 +59,9 @@ class APIManager: NSObject, NetworkManagerInitializable {
         return APIManager(session: URLSession(configuration: .default, delegate: nil, delegateQueue: .main))
     }
     
-    private(set) var session: URLSessionProtocol
+    private(set) var session: URLSession
     
-    required init(session: URLSessionProtocol) {
+    required init(session: URLSession) {
         self.session = session
     }
 }
