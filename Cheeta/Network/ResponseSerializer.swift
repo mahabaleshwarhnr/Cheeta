@@ -73,17 +73,18 @@ extension Encodable {
     }
 }
 
-enum ParseError: Error {
+enum ParseError: Int, Error {
     case responseTypeNotFound
 }
 
-enum ServiceError: Error {
+enum ServiceError: Int, Error {
     case unknownError
     case noData
     case invalidURLRequest
     case invalidURL
+    case payloadMissing
 }
 
-enum ValidationError: Error {
+enum ValidationError: Int, Error {
     case queryParamsMissing
 }

@@ -38,7 +38,7 @@ class APIRequest: RequestConfigurable {
     var endPoint: String
     var queryParams: [String : String]?
     var method: HTTPMethod
-    var headers: [String : String]?
+    open var headers: [String : String]?
     var payload: Encodable?    
     
     required init(endPoint: APIEndPoint, method: HTTPMethod, payload: Encodable? = nil, queryParams: [String : String]?) {
