@@ -19,7 +19,5 @@ struct MockReponse: Codable {
     let firstName, lastName, country: String
 }
 
-extension MockReponse: Equatable {
-    
-}
+extension MockReponse: Equatable {}
 
