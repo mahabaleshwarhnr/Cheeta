@@ -19,7 +19,7 @@ Download network folder and replace exisiting base URL your URL in `APIRequest` 
        endPoint argumnent should conforms to APIEndPoint protocol. By default `String` is conformed to APIEndPoint Protocol.
          You can also create a request following way
          
-          let apiRequest = APIRequest(endPoint: "search", method: .get, payload: nil, queryParams: query)`
+          let apiRequest = APIRequest(endPoint: "search", method: .get, payload: nil, queryParams: query)
          
      
    3. Execute Request
