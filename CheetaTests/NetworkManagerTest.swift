@@ -32,7 +32,7 @@ class NetworkManagerTest: XCBaseTestCase {
         }
         let expectation = XCTestExpectation(description: "api manager should return success and return MockReponse")
         let musicSearchRequest = APIRequest(endPoint: MusicEnpoints.search, method: .get, queryParams: nil)
-        apiManager.sendRequest(request: musicSearchRequest, responseType: MockReponse.self) { (response) in
+        let task = apiManager.sendRequest(request: musicSearchRequest, responseType: MockReponse.self) { (response) in
             switch response {
             case .success( _):
                 XCTAssert(true)
@@ -41,7 +41,7 @@ class NetworkManagerTest: XCBaseTestCase {
             }
             expectation.fulfill()
         }
-        wait(for: [expectation], timeout: 60.0)
+        wait(for: [expectation], timeout: task.originalRequest!.timeoutInterval)
     }
     
     
@@ -53,7 +53,7 @@ class NetworkManagerTest: XCBaseTestCase {
         }
         let expectation = XCTestExpectation(description: "api manager should return error and execute fail block")
         let musicSearchRequest = APIRequest(endPoint: MusicEnpoints.search, method: .get, queryParams: nil)
-        apiManager.sendRequest(request: musicSearchRequest, responseType: MockReponse.self) { (response) in
+        let task = apiManager.sendRequest(request: musicSearchRequest, responseType: MockReponse.self) { (response) in
             switch response {
             case .success( _):
                  XCTFail("should not come to success block")
@@ -62,7 +62,7 @@ class NetworkManagerTest: XCBaseTestCase {
                 expectation.fulfill()
             }
         }
-        wait(for: [expectation], timeout: 60.0)
+        wait(for: [expectation], timeout: task.originalRequest!.timeoutInterval)
     }
     
     func testAPIManagerShouldReturnErrorWhenResponseHasErrorData() {
@@ -73,7 +73,7 @@ class NetworkManagerTest: XCBaseTestCase {
         }
         let expectation = XCTestExpectation(description: "api manager should return error and execute fail block")
         let musicSearchRequest = APIRequest(endPoint: MusicEnpoints.search, method: .get, queryParams: nil)
-        apiManager.sendRequest(request: musicSearchRequest, responseType: MockReponse.self) { (response) in
+        let task = apiManager.sendRequest(request: musicSearchRequest, responseType: MockReponse.self) { (response) in
             switch response {
             case .success( _):
                  XCTFail("should not come to success block")
@@ -82,7 +82,7 @@ class NetworkManagerTest: XCBaseTestCase {
                 expectation.fulfill()
             }
         }
-        wait(for: [expectation], timeout: 60.0)
+        wait(for: [expectation], timeout: task.originalRequest!.timeoutInterval)
     }
     
     func testAPIManagerURLRequestInitialization() {
@@ -140,7 +140,7 @@ class NetworkManagerTest: XCBaseTestCase {
         DispatchQueue.main.asyncAfter(deadline: .now()) {
             task.cancel()
         }
-        wait(for: [expectation], timeout: 60.0)
+        wait(for: [expectation], timeout: task.originalRequest!.timeoutInterval)
     }
     
     func testAPIManagerShouldReturnErrorWhenRequestIsInCorrect() {
@@ -150,7 +150,7 @@ class NetworkManagerTest: XCBaseTestCase {
         }
         let expectation = XCTestExpectation(description: "urlsession data task should return error when api request is incorrect like HTTP method wrong or query params missed")
         let musicSearchRequest = APIRequest(endPoint: MusicEnpoints.search, method: .get, queryParams: nil)
-        apiManager.sendRequest(request: musicSearchRequest, responseType: MockReponse.self) { (response) in
+        let task = apiManager.sendRequest(request: musicSearchRequest, responseType: MockReponse.self) { (response) in
             switch response {
             case .success( _):
                  XCTFail("should not come to success block")
@@ -159,7 +159,7 @@ class NetworkManagerTest: XCBaseTestCase {
             }
             expectation.fulfill()
         }
-        wait(for: [expectation], timeout: 60.0)
+        wait(for: [expectation], timeout: task.originalRequest!.timeoutInterval)
     }
     
     func testAPIManagerShouldReturnDataWhenRequestIsCorrect() {
@@ -171,7 +171,7 @@ class NetworkManagerTest: XCBaseTestCase {
         }
         let expectation = XCTestExpectation(description: "urlsession data task should return correct data when api request is correct and api manager should parse response successfully, retun right model")
         let musicSearchRequest = APIRequest(endPoint: MusicEnpoints.search, method: .get, queryParams: nil)
-        apiManager.sendRequest(request: musicSearchRequest, responseType: MockReponse.self) { (response) in
+        let task = apiManager.sendRequest(request: musicSearchRequest, responseType: MockReponse.self) { (response) in
             switch response {
             case .success(let response):
                 let expectedResponse = MockReponse(firstName: "John", lastName: "Doe", country: "United Kingdom")
@@ -181,7 +181,7 @@ class NetworkManagerTest: XCBaseTestCase {
             }
             expectation.fulfill()
         }
-        wait(for: [expectation], timeout: 60.0)
+        wait(for: [expectation], timeout: task.originalRequest!.timeoutInterval)
     }
     
     

@@ -27,11 +27,7 @@ class MockURLProtocol: URLProtocol {
     override class func canonicalRequest(for request: URLRequest) -> URLRequest {
         return request
     }
-    
-    override class func requestIsCacheEquivalent(_ a: URLRequest, to b: URLRequest) -> Bool {
-        return false
-    }
-    
+
     override func startLoading() {
         
         workItem = DispatchWorkItem(block: { [weak self] in

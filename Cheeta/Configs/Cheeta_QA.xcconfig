@@ -13,7 +13,7 @@
 // Server URL
 ROOT_URL = https:/$()/itunes.apple.com/
 //Test Target
-MOCK_URL = https:/$()/mock
+MOCK_URL = https:/$()/mock.itunes.apple.com/
 
 // Keys
 API_KEY = 783u9djd8a_hkzos7jd803001nd

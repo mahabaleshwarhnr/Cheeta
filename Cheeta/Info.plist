@@ -16,10 +16,20 @@
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict/>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>MOCK_URL</key>
+	<string>$(MOCK_URL)</string>
+	<key>ROOT_URL</key>
+	<string>$(ROOT_URL)</string>
+	<key>TargetName</key>
+	<integer>0</integer>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -60,11 +70,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>TargetName</key>
-	<integer>0</integer>
-	<key>ROOT_URL</key>
-	<string>$(ROOT_URL)</string>
-	<key>MOCK_URL</key>
-	<string>$(MOCK_URL)</string>
 </dict>
 </plist>
