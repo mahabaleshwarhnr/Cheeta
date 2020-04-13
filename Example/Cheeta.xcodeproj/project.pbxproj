@@ -14,24 +14,16 @@
 		5919413023EBED2F00806B38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5919412F23EBED2F00806B38 /* Assets.xcassets */; };
 		5919413323EBED2F00806B38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5919413123EBED2F00806B38 /* LaunchScreen.storyboard */; };
 		5919414923EBED2F00806B38 /* CheetaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5919414823EBED2F00806B38 /* CheetaUITests.swift */; };
-		5919415823EBEFF700806B38 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5919415723EBEFF700806B38 /* NetworkManager.swift */; };
-		5919415A23EBF4B100806B38 /* URLUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5919415923EBF4B100806B38 /* URLUtils.swift */; };
 		5919415E23EC132E00806B38 /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5919415D23EC132E00806B38 /* APIConfig.swift */; };
-		5919418123ED36A900806B38 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5919418023ED36A900806B38 /* APIRequest.swift */; };
-		5919418B23ED8F6F00806B38 /* URLResponse+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5919418A23ED8F6F00806B38 /* URLResponse+Extension.swift */; };
 		5919418D23EDC2AF00806B38 /* JsonManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5919418C23EDC2AF00806B38 /* JsonManagerTest.swift */; };
-		5919418F23EDC77C00806B38 /* MockUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5919418E23EDC77C00806B38 /* MockUtils.swift */; };
 		5919419023F06E4700806B38 /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5919415D23EC132E00806B38 /* APIConfig.swift */; };
 		596064E52403A7AD0013296A /* MusicListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596064E42403A7AD0013296A /* MusicListViewModel.swift */; };
 		596064E82403A85D0013296A /* MusicSearchResultContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596064E72403A85D0013296A /* MusicSearchResultContainer.swift */; };
 		596064EC2403B0E30013296A /* MusicRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596064EB2403B0E30013296A /* MusicRequestTest.swift */; };
-		596064F02403C7A60013296A /* ResponseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5919418723ED8F2200806B38 /* ResponseSerializer.swift */; };
 		596064F12403C7BE0013296A /* MockResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 596064DE24039FC80013296A /* MockResponse.json */; };
 		596064F42403C8180013296A /* MusicRequestSearchResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 596064F22403C7FA0013296A /* MusicRequestSearchResponse.json */; };
 		596064FB2403F3BC0013296A /* NetworkManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596064FA2403F3BC0013296A /* NetworkManagerTest.swift */; };
 		596065B12408D3710013296A /* MusicListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596065B02408D3710013296A /* MusicListViewModelTest.swift */; };
-		59CFFBB82429399A00AB8EDA /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CFFBB72429399A00AB8EDA /* MockURLProtocol.swift */; };
-		59CFFBF82429E02800AB8EDA /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CFFBF72429E02800AB8EDA /* URL+Extension.swift */; };
 		59CFFBFA242A0A4500AB8EDA /* XCBaseTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CFFBF9242A0A4500AB8EDA /* XCBaseTestCase.swift */; };
 /* End PBXBuildFile section */
 
@@ -66,18 +58,12 @@
 		5919414423EBED2F00806B38 /* CheetaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheetaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5919414823EBED2F00806B38 /* CheetaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheetaUITests.swift; sourceTree = "<group>"; };
 		5919414A23EBED2F00806B38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5919415723EBEFF700806B38 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		5919415923EBF4B100806B38 /* URLUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLUtils.swift; sourceTree = "<group>"; };
 		5919415D23EC132E00806B38 /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
 		5919417C23EC305400806B38 /* Cheeta_Dev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Cheeta_Dev.xcconfig; sourceTree = "<group>"; };
 		5919417D23EC34A500806B38 /* Cheeta_QA.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Cheeta_QA.xcconfig; sourceTree = "<group>"; };
 		5919417E23EC34B900806B38 /* Cheeta_Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Cheeta_Staging.xcconfig; sourceTree = "<group>"; };
 		5919417F23EC34CA00806B38 /* Cheeta_Prod.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Cheeta_Prod.xcconfig; sourceTree = "<group>"; };
-		5919418023ED36A900806B38 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
-		5919418723ED8F2200806B38 /* ResponseSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseSerializer.swift; sourceTree = "<group>"; };
-		5919418A23ED8F6F00806B38 /* URLResponse+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLResponse+Extension.swift"; sourceTree = "<group>"; };
 		5919418C23EDC2AF00806B38 /* JsonManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonManagerTest.swift; sourceTree = "<group>"; };
-		5919418E23EDC77C00806B38 /* MockUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUtils.swift; sourceTree = "<group>"; };
 		596064DE24039FC80013296A /* MockResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockResponse.json; sourceTree = "<group>"; };
 		596064E42403A7AD0013296A /* MusicListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListViewModel.swift; sourceTree = "<group>"; };
 		596064E72403A85D0013296A /* MusicSearchResultContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicSearchResultContainer.swift; sourceTree = "<group>"; };
@@ -85,8 +71,6 @@
 		596064F22403C7FA0013296A /* MusicRequestSearchResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MusicRequestSearchResponse.json; sourceTree = "<group>"; };
 		596064FA2403F3BC0013296A /* NetworkManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTest.swift; sourceTree = "<group>"; };
 		596065B02408D3710013296A /* MusicListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListViewModelTest.swift; sourceTree = "<group>"; };
-		59CFFBB72429399A00AB8EDA /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
-		59CFFBF72429E02800AB8EDA /* URL+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
 		59CFFBF9242A0A4500AB8EDA /* XCBaseTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCBaseTestCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,7 +125,6 @@
 				596064E62403A84F0013296A /* Models */,
 				596064E32403A7900013296A /* ViewModel */,
 				5919417B23EC2FFB00806B38 /* Configs */,
-				5919415623EBEE3200806B38 /* Network */,
 				5919412623EBED2B00806B38 /* AppDelegate.swift */,
 				5919412823EBED2B00806B38 /* SceneDelegate.swift */,
 				5919412A23EBED2B00806B38 /* ViewController.swift */,
@@ -176,19 +159,6 @@
 			path = CheetaUITests;
 			sourceTree = "<group>";
 		};
-		5919415623EBEE3200806B38 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				5919418923ED8F5C00806B38 /* Extensions */,
-				5919418723ED8F2200806B38 /* ResponseSerializer.swift */,
-				5919418423ED8AA000806B38 /* Mock */,
-				5919415723EBEFF700806B38 /* NetworkManager.swift */,
-				5919415923EBF4B100806B38 /* URLUtils.swift */,
-				5919418023ED36A900806B38 /* APIRequest.swift */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
 		5919417B23EC2FFB00806B38 /* Configs */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,24 +169,6 @@
 				5919417F23EC34CA00806B38 /* Cheeta_Prod.xcconfig */,
 			);
 			path = Configs;
-			sourceTree = "<group>";
-		};
-		5919418423ED8AA000806B38 /* Mock */ = {
-			isa = PBXGroup;
-			children = (
-				5919418E23EDC77C00806B38 /* MockUtils.swift */,
-				59CFFBB72429399A00AB8EDA /* MockURLProtocol.swift */,
-			);
-			path = Mock;
-			sourceTree = "<group>";
-		};
-		5919418923ED8F5C00806B38 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				5919418A23ED8F6F00806B38 /* URLResponse+Extension.swift */,
-				59CFFBF72429E02800AB8EDA /* URL+Extension.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		596064E32403A7900013296A /* ViewModel */ = {
@@ -260,6 +212,8 @@
 			dependencies = (
 			);
 			name = Cheeta;
+			packageProductDependencies = (
+			);
 			productName = Cheeta;
 			productReference = 5919412323EBED2B00806B38 /* Cheeta.app */;
 			productType = "com.apple.product-type.application";
@@ -332,6 +286,8 @@
 				Base,
 			);
 			mainGroup = 5919411A23EBED2B00806B38;
+			packageReferences = (
+			);
 			productRefGroup = 5919412423EBED2B00806B38 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -377,19 +333,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5919415A23EBF4B100806B38 /* URLUtils.swift in Sources */,
-				5919418123ED36A900806B38 /* APIRequest.swift in Sources */,
-				5919415823EBEFF700806B38 /* NetworkManager.swift in Sources */,
 				596064E52403A7AD0013296A /* MusicListViewModel.swift in Sources */,
 				5919415E23EC132E00806B38 /* APIConfig.swift in Sources */,
-				596064F02403C7A60013296A /* ResponseSerializer.swift in Sources */,
 				5919412B23EBED2B00806B38 /* ViewController.swift in Sources */,
 				5919412723EBED2B00806B38 /* AppDelegate.swift in Sources */,
-				59CFFBF82429E02800AB8EDA /* URL+Extension.swift in Sources */,
-				5919418B23ED8F6F00806B38 /* URLResponse+Extension.swift in Sources */,
-				5919418F23EDC77C00806B38 /* MockUtils.swift in Sources */,
 				5919412923EBED2B00806B38 /* SceneDelegate.swift in Sources */,
-				59CFFBB82429399A00AB8EDA /* MockURLProtocol.swift in Sources */,
 				596064E82403A85D0013296A /* MusicSearchResultContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
