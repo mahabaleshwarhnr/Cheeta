@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,7 +22,6 @@
 		596064F42403C8180013296A /* MusicRequestSearchResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 596064F22403C7FA0013296A /* MusicRequestSearchResponse.json */; };
 		596064FB2403F3BC0013296A /* NetworkManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596064FA2403F3BC0013296A /* NetworkManagerTest.swift */; };
 		596065B12408D3710013296A /* MusicListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596065B02408D3710013296A /* MusicListViewModelTest.swift */; };
-		59883FB6244451DC00ABE9B5 /* Cheeta in Frameworks */ = {isa = PBXBuildFile; productRef = 59883FB5244451DC00ABE9B5 /* Cheeta */; };
 		59883FB92444525B00ABE9B5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59883FB82444525B00ABE9B5 /* Default-568h@2x.png */; };
 		59CFFBFA242A0A4500AB8EDA /* XCBaseTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CFFBF9242A0A4500AB8EDA /* XCBaseTestCase.swift */; };
 /* End PBXBuildFile section */
@@ -79,7 +78,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59883FB6244451DC00ABE9B5 /* Cheeta in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,7 +212,6 @@
 			);
 			name = CheetaExample;
 			packageProductDependencies = (
-				59883FB5244451DC00ABE9B5 /* Cheeta */,
 			);
 			productName = Cheeta;
 			productReference = 5919412323EBED2B00806B38 /* CheetaExample.app */;
@@ -289,7 +286,6 @@
 			);
 			mainGroup = 5919411A23EBED2B00806B38;
 			packageReferences = (
-				59883FB4244451DC00ABE9B5 /* XCRemoteSwiftPackageReference "CheetaPackage" */,
 			);
 			productRefGroup = 5919412423EBED2B00806B38 /* Products */;
 			projectDirPath = "";
@@ -1407,25 +1403,6 @@
 			defaultConfigurationName = "Release Dev";
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		59883FB4244451DC00ABE9B5 /* XCRemoteSwiftPackageReference "CheetaPackage" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mahabaleshwarhnr/CheetaPackage.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.6;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		59883FB5244451DC00ABE9B5 /* Cheeta */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 59883FB4244451DC00ABE9B5 /* XCRemoteSwiftPackageReference "CheetaPackage" */;
-			productName = Cheeta;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5919411B23EBED2B00806B38 /* Project object */;
 }
