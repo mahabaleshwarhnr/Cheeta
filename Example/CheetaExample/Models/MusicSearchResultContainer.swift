@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import Cheeta
+
 
 // MARK: - MusicSearchResultContainer
 struct MusicSearchResultContainer: Codable {

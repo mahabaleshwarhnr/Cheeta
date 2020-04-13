@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5919412223EBED2B00806B38"
-               BuildableName = "Cheeta.app"
-               BlueprintName = "Cheeta"
-               ReferencedContainer = "container:Cheeta.xcodeproj">
+               BuildableName = "CheetaExample.app"
+               BlueprintName = "CheetaExample"
+               ReferencedContainer = "container:CheetaExample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,9 +32,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5919412223EBED2B00806B38"
-            BuildableName = "Cheeta.app"
-            BlueprintName = "Cheeta"
-            ReferencedContainer = "container:Cheeta.xcodeproj">
+            BuildableName = "CheetaExample.app"
+            BlueprintName = "CheetaExample"
+            ReferencedContainer = "container:CheetaExample.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <EnvironmentVariables>
@@ -50,9 +50,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5919413823EBED2F00806B38"
-               BuildableName = "CheetaTests.xctest"
-               BlueprintName = "CheetaTests"
-               ReferencedContainer = "container:Cheeta.xcodeproj">
+               BuildableName = "CheetaExampleTests.xctest"
+               BlueprintName = "CheetaExampleTests"
+               ReferencedContainer = "container:CheetaExample.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -60,9 +60,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5919414323EBED2F00806B38"
-               BuildableName = "CheetaUITests.xctest"
-               BlueprintName = "CheetaUITests"
-               ReferencedContainer = "container:Cheeta.xcodeproj">
+               BuildableName = "CheetaExampleUITests.xctest"
+               BlueprintName = "CheetaExampleUITests"
+               ReferencedContainer = "container:CheetaExample.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -82,9 +82,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5919412223EBED2B00806B38"
-            BuildableName = "Cheeta.app"
-            BlueprintName = "Cheeta"
-            ReferencedContainer = "container:Cheeta.xcodeproj">
+            BuildableName = "CheetaExample.app"
+            BlueprintName = "CheetaExample"
+            ReferencedContainer = "container:CheetaExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <EnvironmentVariables>
@@ -106,9 +106,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5919412223EBED2B00806B38"
-            BuildableName = "Cheeta.app"
-            BlueprintName = "Cheeta"
-            ReferencedContainer = "container:Cheeta.xcodeproj">
+            BuildableName = "CheetaExample.app"
+            BlueprintName = "CheetaExample"
+            ReferencedContainer = "container:CheetaExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

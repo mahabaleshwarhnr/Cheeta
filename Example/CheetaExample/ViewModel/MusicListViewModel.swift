@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Cheeta
 
 class MusicListViewModel: NSObject {
     

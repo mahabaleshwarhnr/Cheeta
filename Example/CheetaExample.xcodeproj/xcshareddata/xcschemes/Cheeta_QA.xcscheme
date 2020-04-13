@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5919412223EBED2B00806B38"
-               BuildableName = "Cheeta.app"
-               BlueprintName = "Cheeta"
-               ReferencedContainer = "container:Cheeta.xcodeproj">
+               BuildableName = "CheetaExample.app"
+               BlueprintName = "CheetaExample"
+               ReferencedContainer = "container:CheetaExample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -26,14 +26,16 @@
       buildConfiguration = "Debug Dev"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "NO"
+      codeCoverageEnabled = "YES"
+      onlyGenerateCoverageForSpecifiedTargets = "YES">
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5919412223EBED2B00806B38"
-            BuildableName = "Cheeta.app"
-            BlueprintName = "Cheeta"
-            ReferencedContainer = "container:Cheeta.xcodeproj">
+            BuildableName = "CheetaExample.app"
+            BlueprintName = "CheetaExample"
+            ReferencedContainer = "container:CheetaExample.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <EnvironmentVariables>
@@ -43,15 +45,24 @@
             isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>
+      <CodeCoverageTargets>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "5919412223EBED2B00806B38"
+            BuildableName = "CheetaExample.app"
+            BlueprintName = "CheetaExample"
+            ReferencedContainer = "container:CheetaExample.xcodeproj">
+         </BuildableReference>
+      </CodeCoverageTargets>
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5919413823EBED2F00806B38"
-               BuildableName = "CheetaTests.xctest"
-               BlueprintName = "CheetaTests"
-               ReferencedContainer = "container:Cheeta.xcodeproj">
+               BuildableName = "CheetaExampleTests.xctest"
+               BlueprintName = "CheetaExampleTests"
+               ReferencedContainer = "container:CheetaExample.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -59,15 +70,15 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5919414323EBED2F00806B38"
-               BuildableName = "CheetaUITests.xctest"
-               BlueprintName = "CheetaUITests"
-               ReferencedContainer = "container:Cheeta.xcodeproj">
+               BuildableName = "CheetaExampleUITests.xctest"
+               BlueprintName = "CheetaExampleUITests"
+               ReferencedContainer = "container:CheetaExample.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug Prod"
+      buildConfiguration = "Debug QA"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -81,9 +92,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5919412223EBED2B00806B38"
-            BuildableName = "Cheeta.app"
-            BlueprintName = "Cheeta"
-            ReferencedContainer = "container:Cheeta.xcodeproj">
+            BuildableName = "CheetaExample.app"
+            BlueprintName = "CheetaExample"
+            ReferencedContainer = "container:CheetaExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -98,9 +109,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5919412223EBED2B00806B38"
-            BuildableName = "Cheeta.app"
-            BlueprintName = "Cheeta"
-            ReferencedContainer = "container:Cheeta.xcodeproj">
+            BuildableName = "CheetaExample.app"
+            BlueprintName = "CheetaExample"
+            ReferencedContainer = "container:CheetaExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
@@ -108,7 +119,7 @@
       buildConfiguration = "Debug Dev">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Release Prod"
+      buildConfiguration = "Release QA"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
