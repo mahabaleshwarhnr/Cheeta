@@ -19,7 +19,7 @@ public final class APIConfig {
     
     private init() {}
     
-    public static let config: APIConfig = APIConfig()
+    public static let `default`: APIConfig = APIConfig()
     
     public func register(baseURL: URL) {
         url = baseURL
