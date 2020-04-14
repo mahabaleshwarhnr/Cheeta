@@ -47,6 +47,34 @@ Cheeta is very simple and lightweight networking library.
                 print("failed: \(error.userInfo)")
             }
           }
- 
+ ### API Mock
+ If you are wrting test cases you may have to mock your API responses.
+    
+   1. Download [MockURLProcol.swift](https://gist.github.com/mahabaleshwarhnr/c427b9ab1fd38f8abe81f37397cf22e8) and it your test target.
+   2. Create a URLSession object with MockURLProcol URLSessionConfiguration.
+        
+         Basic setup
+         
+          let mockConfig = URLSessionConfiguration.default
+          mockConfig.protocolClasses = [URLProtocol.self]
+          let mockSession = URLSession(configuration: mockConfig, delegate: nil, delegateQueue: .main)
+          let apiManager = APIManager(session: mockSession)
+        
+         Test related data
+        
+          let apiRequest = APIRequest(endPoint: "search", method: .get, payload: nil, queryParams: nil)
+          let responseData = Data([0, 1, 0, 1])
+          let httpResponse = HTTPURLResponse(url: apiRequest.getURL(), statusCode: 200, httpVersion: "2.0", headerFields: nil)
+          let jsonManager = JSONManager(data: responseData, response: httpResponse, error: nil)
+          
+         Pass your mock response completionhandler and assert your tests
+         
+           MockURLProtocol.mockResponseHandler = { request in
+            let successResponse = HTTPURLResponse(url: request.url!, statusCode: 200, httpVersion: nil, headerFields: nil)!
+            return (httpResponse, responseData)
+           }
+          
+        
+        
   
       
