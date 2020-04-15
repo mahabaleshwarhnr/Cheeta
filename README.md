@@ -20,6 +20,7 @@ Cheeta is very simple and lightweight networking library.
      Note: Your base URL should always ends with path(/)
 
   2. Configure API Manager
+     
      You can directly use APIManager static instance `APIManager.shared`. It uses default session configuration.
      
      You can also pass your own session to initialize the APIManager
